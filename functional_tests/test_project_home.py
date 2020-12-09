@@ -11,6 +11,9 @@ class Testprojecthome(StaticLiveServerTestCase):
         driver_location="/usr/bin/chromedriver"
         binary_location="/usr/bin/google-chrome"
         options= webdriver.ChromeOptions()
+        options.add_argument('--headless')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
         options.binary_location=binary_location
         
         self.browser=webdriver.Chrome(executable_path=driver_location, chrome_options=options)
