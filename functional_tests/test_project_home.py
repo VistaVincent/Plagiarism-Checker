@@ -8,7 +8,12 @@ import time
 class Testprojecthome(StaticLiveServerTestCase):
 
     def setUp(self):
-        self.browser= webdriver.Chrome("functional_tests/chromedriver.exe")
+        driver_location="/usr/bin/chromedriver"
+        binary_location="/usr/bin/google-chrome"
+        options= webdriver.ChromeOptions()
+        options.binary_location=binary_location
+        
+        self.browser=webdriver.Chrome(executable_path=driver_location, chrome_options=options)
 
     def tearDown(self):
         self.browser.close()
