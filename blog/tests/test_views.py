@@ -24,14 +24,14 @@ class TestViews(TestCase):
         self.assertTemplateUsed(response, 'blog/about.html')
 
     
-    def test_post_update(self):
-        request = self.factory.get('/post/new/')
-        request.user = self.user
-        request.user = AnonymousUser()
-        response = PostCreateView(request)
+   # def test_post_update(self):
+      #  request = self.factory.get('/post/new/')
+      #  request.user = self.user
+      #  request.user = AnonymousUser()
+      #  response = PostCreateView(request)
 
-        response = PostCreateView.as_view()(request)
-        self.assertEqual(response.status_code, 200)
+      #  response = PostCreateView.as_view()(request)
+       # self.assertEqual(response.status_code, 200)
         # response=self.client.get(reverse("post-create"))
         # self.assertEquals(response.status_code, 200)
         # self.assertTemplateUsed(response, "blog/post_new.html")
