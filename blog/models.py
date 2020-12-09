@@ -52,9 +52,9 @@ class Post(models.Model):
         
         #internal plagiarism
         internal_plag=0
-        for fil in os.listdir(r'C:\Users\user\Desktop\SEM7\CAPSTONE\plag_app\Django-Twitter-Clone\media\Assignments'):
+        for fil in os.listdir(r'C:\Users\Pranay Chowdary\Desktop\plagarism\Plagiarism-Checker\media\Assignments'):
             if fil.endswith('.docx'):
-                my_friend_text = docx2txt.process('C:\\Users\\user\\Desktop\\SEM7\\CAPSTONE\\plag_app\\Django-Twitter-Clone\\media\\Assignments\\'+fil)
+                my_friend_text = docx2txt.process('C:\\Users\\Pranay Chowdary\\Desktop\\plagarism\\Plagiarism-Checker\\media\\Assignments\\'+fil)
                 #print(my_text)
             elif fil.endswith('.pdf'):
                 pass

@@ -321,7 +321,7 @@ def postpreference(request, postid, userpreference):
 
 
 def about(request):
-    return render(request,'blog/about.html',)
+    return render(request,'blog/about.html')
 
 
 
