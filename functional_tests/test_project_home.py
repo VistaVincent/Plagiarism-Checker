@@ -53,7 +53,7 @@ class Testprojecthome(StaticLiveServerTestCase):
         )
 
 
-    def test_upload(self):
+    def test_upload(self): 
         self.browser.get(self.live_server_url)
         self.browser.find_element_by_link_text('Register').click()
         self.browser.find_element_by_name("username").send_keys("pranay")
