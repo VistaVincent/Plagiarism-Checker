@@ -36,7 +36,6 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 joblib==0.16.0
 kiwisolver==1.2.0
-language-tool-python==2.4.7
 lockfile==0.12.2
 MarkupSafe==1.1.1
 msgpack==0.6.2
