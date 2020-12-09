@@ -12,9 +12,9 @@ from nltk.tokenize import word_tokenize
 import string
 from difflib import SequenceMatcher
 #for grammar
-import language_tool_python
-tool = language_tool_python.LanguageTool('en-US')
-
+#import language_tool_python
+#tool = language_tool_python.LanguageTool('en-US')
+'''
 def gram_check(text):
     matches = tool.check(text)
     res={}
@@ -23,6 +23,7 @@ def gram_check(text):
         final+=str(prob)
         final+='\n'
     return final
+'''
     
 def plag_check(main_text,cand_text):
     X=word_tokenize(main_text)
