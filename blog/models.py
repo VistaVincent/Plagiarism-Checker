@@ -72,9 +72,12 @@ class Post(models.Model):
         self.InternalPlag=internal_plag
 
         #grammar checker
+        '''
         checked= gram_check(my_text)
         print(checked)
-        self.grammar=checked
+        '''
+        self.grammar='This is placeholder'
+        
 
 
 
